@@ -46,3 +46,8 @@ La sección de contacto contiene:
 ## Justificación de Lanzamiento: Versión v1.0
 
 Esta versión se marca oficialmente como **v1.0** porque constituye el primer **Producto Mínimo Viable (MVP)** completo y funcional de la aplicación.
+
+## Conceptos Avanzados de Git
+
+### ¿Qué hace `git stash`?
+`git stash` es como un "cajón temporal" donde guardas los cambios en los que estás trabajando sin necesidad de hacer un commit. Es muy útil cuando estás en medio de una tarea, no has terminado, pero necesitas cambiar de rama urgentemente o solucionar un error en otra parte. Al ejecutar el comando, Git limpia tu espacio de trabajo dejándolo como en el último commit, y cuando estés listo, puedes recuperar tus cambios pendientes con `git stash pop`.
