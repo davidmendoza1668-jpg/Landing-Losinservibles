@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>CaféTech - Landing Page</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Arial, sans-serif; }
+  section { padding: 60px 20px; text-align: center; }
+</style>
+</head>
+<body>
+
+  <!-- INTEGRANTE 1: completa esta seccion de Inicio -->
+  <section id="inicio">
+    <h1>TODO: BrillaMax </h1>
+    <p>TODO: Brilla sin límites</p>
+  </section>
+
+  <!-- INTEGRANTE 2: completa esta seccion de Servicios -->
+  <section id="servicios">
+   <h1>CarWash</h1>
+    <h2>Nuestros servicios</h2>
+
+    <ul>
+        <li>
+            <h3>Lavado Básico</h3>
+            <p>
+                Lavado exterior del vehículo, incluyendo limpieza de 
+                carrocería, vidrios y llantas.
+            </p>
+        </li>
+
+        <li>
+            <h3>Lavado Completo</h3>
+            <p>
+                Limpieza exterior e interior del vehículo, con lavado 
+                de carrocería, llantas, vidrios y aspirado.
+            </p>
+        </li>
+
+        <li>
+            <h3>Limpieza Interior</h3>
+            <p>
+                Limpieza profunda del interior del vehículo, incluyendo 
+                aspirado de asientos, tapetes y tablero.
+            </p>
+        </li>
+    </ul>
+  </section>
+
+ /* ======================================================= */
+  /* SECCIÓN DE CONTACTO — estilos (Integrante 3)             */
+  /* ======================================================= */
+ 
+  .contacto-section {
+    background-color: var(--bg-white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+ 
+  .contacto-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+ 
+  .contacto-header {
+    text-align: left;
+    max-width: 640px;
+  }
+ 
+  .contacto-header p {
+    font-size: 1.05rem;
+  }
+ 
+  .contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 48px;
+    align-items: start;
+  }
+ 
+  @media (max-width: 768px) {
+    .contacto-grid {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+  }
+ 
+  /* --- Columna de información --- */
+  .contacto-info h3 {
+    font-size: 1.15rem;
+    margin-bottom: 24px;
+  }
+ 
+  .info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+ 
+  .info-item .icon {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    flex-shrink: 0;
+  }
+ 
+  .info-item strong {
+    display: block;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    margin-bottom: 2px;
+  }
+ 
+  .info-item p {
+    font-size: 0.95rem;
+    margin: 0;
+  }
+ 
+  .redes-sociales {
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border-color);
+  }
+ 
+  .redes-sociales h4 {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+ 
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+ 
+  .social-links a {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+ 
+  .social-links a:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+  }
+ 
+  /* --- Formulario --- */
+  .contacto-form {
+    background-color: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+ 
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+ 
+  .form-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+ 
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-family: inherit;
+    font-size: 0.95rem;
+    padding: 12px 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--bg-white);
+    color: var(--text-dark);
+    resize: vertical;
+  }
+ 
+  .form-group select {
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, var(--text-muted) 50%),
+      linear-gradient(135deg, var(--text-muted) 50%, transparent 50%);
+    background-position: calc(100% - 20px) center, calc(100% - 15px) center;
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat;
+  }
+ 
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+  }
+ 
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: #adb5bd;
+  }
+ 
+  .btn-enviar {
+    align-self: flex-start;
+    padding: 12px 28px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+ 
+  .btn-enviar:hover {
+    background-color: var(--primary-hover);
+  }
+ 
+  .btn-enviar:focus-visible,
+  .social-links a:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+  }
+</style>
+</head>
+<body>
+ 
+  <!-- INTEGRANTE 1: completa esta seccion de Inicio -->
+  <section id="inicio">
+    <h1>TODO: Nombre del negocio ficticio</h1>
+    <p>TODO: Frase llamativa (eslogan)</p>
+  </section>
+ 
+  <!-- INTEGRANTE 2: completa esta seccion de Servicios -->
+  <section id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <p>TODO: Lista o descripción de 3 servicios/productos</p>
+  </section>
+ 
+  <!-- INTEGRANTE 3: Sección de Contacto -->
+  <section id="contacto" class="contacto-section">
+    <div class="contacto-container">
+      <div class="contacto-header">
+        <h2>Contáctanos</h2>
+        <p>Estamos aquí para ayudarte. Déjanos un mensaje o encuéntranos en nuestras redes.</p>
+      </div>
+ 
+      <div class="contacto-grid">
+        <!-- Información de contacto y redes -->
+        <div class="contacto-info">
+          <h3>Información de Contacto</h3>
+ 
+          <div class="info-item">
+            <span class="icon">📍</span>
+            <div>
+              <strong>Dirección</strong>
+              <p>Cra 45 # 12-30, Barrio El Progreso<br>Itagüí, Antioquia</p>
+            </div>
+          </div>
+ 
+          <div class="info-item">
+            <span class="icon">📞</span>
+            <div>
+              <strong>Teléfono</strong>
+              <p>+57 (604) 555-0199</p>
+            </div>
+          </div>
+ 
+          <div class="info-item">
+            <span class="icon">✉️</span>
+            <div>
+              <strong>Correo Electrónico</strong>
+              <p>contacto@lavaderoexpress.com</p>
+            </div>
+          </div>
+ 
+          <div class="info-item">
+            <span class="icon">🕒</span>
+            <div>
+              <strong>Horario de atención</strong>
+              <p>Lunes a sábado: 8:00 a.m. – 6:00 p.m.<br>Domingos: 9:00 a.m. – 2:00 p.m.</p>
+            </div>
+          </div>
+ 
+          <div class="redes-sociales">
+            <h4>Síguenos</h4>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook">Facebook</a>
+              <a href="#" aria-label="Instagram">Instagram</a>
+              <a href="#" aria-label="Twitter/X">Twitter</a>
+              <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- Formulario de contacto -->
+        <form class="contacto-form" onsubmit="event.preventDefault(); alert('¡Mensaje enviado con éxito!');">
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          </div>
+ 
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+          </div>
+ 
+          <div class="form-group">
+            <label for="asunto">Servicio de interés</label>
+            <select id="asunto" name="asunto" required>
+              <option value="" disabled selected>Selecciona una opción</option>
+              <option value="lavado-basico">Lavado básico</option>
+              <option value="lavado-completo">Lavado completo + aspirado</option>
+              <option value="encerado">Encerado y brillado</option>
+              <option value="otro">Otro / no estoy seguro</option>
+            </select>
+          </div>
+ 
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos sobre tu vehículo o lo que necesitas..." required></textarea>
+          </div>
+ 
+          <button type="submit" class="btn-enviar">Enviar mensaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+ 
+</body>
+</html>
+ 
